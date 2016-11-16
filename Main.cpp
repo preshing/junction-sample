@@ -11,7 +11,7 @@ void testMap() {
     ConcurrentMap myMap;
 
     // Do a few operations.
-    myMap.insert(14, new Foo);
+    myMap.assign(14, new Foo);
     Foo* foo = myMap.get(14);
     foo = myMap.exchange(14, new Foo);
     delete foo;
